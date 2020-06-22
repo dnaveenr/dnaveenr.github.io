@@ -23,7 +23,7 @@
               <p>I am a machine learning engineer at <a href="https://www.sensara.tv">Sensara Technologies</a>, where I work on image/video content analysis using computer vision and deep learning techniques.
               </p>
               <p>
-                At Sensara I've worked on problems such as channel logo recognition, image quality analysis, object detection/recognition, face recogntion, deep metric learning, image similarity, on-device machine learning. 
+                At Sensara I've worked on problems such as channel logo recognition, image quality analysis, object detection/recognition, face recognition, deep metric learning, image similarity, on-device machine learning. 
                 <br>
                 I did my bachelers in Computer Science & Engineering at <a href="https://www.pes.edu/">PES University, Bangalore</a>.
               </p>
@@ -44,12 +44,25 @@
               <heading>Work Experience</heading>
             </td>
           </tr>
+          <tr>
+            <td width="25%" valign="top">
+              <div style="float:left;"> 
+              <a href="http://www.sensara.tv/">
+                <img id="work_img" width="50" height="50" src='images/sensara-logo.png' />
+              </a>
+            </div>
+            <div style="float:center;">
+                  <center style="font-size:20px">Sensara | Machine Learning Engineer</center>
+                  <center><i>January 2018 - Present | Bengaluru, India </i></center>
+            </div>
+            </td>
+          </tr>
         </table>
 
         <table id="workexperience" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="25%" valign="top">
-              <img id="paper_img" src='images/nips18.jpg'>
+              <img id="work_img" src='images/sensy-ai-tv.png' width="160">
             </td>
             <td width="75%" valign="center" >
               <papertitle>Worked end-to-end on Channel Logo Recognition using Deep Learning which is part of over 100K+ Smart TVs</papertitle>
@@ -61,9 +74,105 @@
                     inter-class-similarities in the logos.</li>
                 <li>Deployed model on Android platform using Tensorflow Lite. Added support for Over the Air Model updation.</li>
               </ul>  
+              This work part of Smart TVs having Sensy Launcher such as Blaupankt, Hyundai, VG TVs.
+              <i>Technologies : Tensorflow, Tensorflow Lite, Android, TF-Slim. </i>
             </td>
           </tr>
+
           <tr>
+            <td width="25%" valign="top">
+              <img id="work_img" src='images/Sensy-STB-Settings.png' width="160">
+            </td>
+            <td width="75%" valign="center" >
+              <papertitle>Auto-Configuration of HDMI Source, Operator Settings on TVs.</papertitle>
+              <br>
+              <ul>
+                <li>Worked on automatic configuration of preferred HDMI and TV Operator without any user intervention.</li>
+                <li>Once the user starts watching Live TV, the HDMI Source and TV operator is automatically detected using Deep Learning and configured. </li>
+                <li>This helps the user to use all features of our Sensy Launcher without manual configuration.</li>
+              </ul>  
+            </td>
+          </tr>
+
+           <tr>
+            <td width="25%" valign="top">
+              <img id="work_img" src='images/sensy-fusion.jpeg' width="160">
+            </td>
+            <td width="75%" valign="center" >
+              <papertitle>Audience Measurement Device - AI powered Pass Through Box</papertitle>
+              <br>
+              <ul>
+                <li>Worked on integration of Edge AI features such as Channel, Operator Recognition along with features such as Black Screen Detection, local Audio Content Recognition, HDMI State Detection, Landing Page Detection.</li>
+                <li> Worked on ensuring lag free experience for end user along with these computations. </li>
+              </ul>  
+              <i> Explored : AudioRecord of Android, tinycap, AOSP platform, On-Device ML </i>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top">
+              <img id="work_img" src='images/sensy-imagery.png' width="160">
+            </td>
+            <td width="75%" valign="center" >
+              <papertitle>Image Quality Analysis</papertitle>
+              <br>
+              <ul>
+                <li>Worked on image quality analysis to rank and select best Show Banners, in-Scene and apparel images. Images were analysed on a range of parameters such as Aesthetic quality, Blurness, Contrast, Interlacing.</li>
+                <li>Face Quality Analysis to select best Faces of people from Scenes and avoided passing bad quality face images for inference to the Recognition Pipeline.</li>
+              </ul>  
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top">
+              <img id="work_img" src='images/face-recognition.png' width="160">
+            </td>
+            <td width="75%" valign="center" >
+              <papertitle>Improvement of Face Recognition</papertitle>
+              <br>
+              <ul>
+                <li>Improved existing face recognition systems to current state-of-the-art face recognition models.</li>
+                <li>This lead to 4x improvement in terms of precision and recall.</li>
+                <li>Worked on improving recognition for faces with higher degree of tilt and occlusions.</li>
+                <li>Speeding up of face recognition latency with faster search capabilities.</li> 
+              </ul>  
+              <i>Technologies : ONNX, Mxnet, Nearest neighbor search. </i>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top">
+              <img id="work_img" src='images/vod-metadata.png' width="160">
+            </td>
+            <td width="75%" valign="center" >
+              <papertitle>AI based Video Indexer</papertitle>
+              <br>
+               <a href="https://www.linkedin.com/pulse/sensara-launches-video-reasoning-platform-ott-players-mohan/"> -> Blog</a>
+              <br>
+              <ul>
+                <li>Added AI capabilities to the Video Indexer which includes Brand Logo Detection, Object Detection and Face Recognition for on-Demand videos. </li>
+                <li>Includes Face Quality Analysis to showcase the best Face/Banner images used to represent the video.</li>
+                <li>Worked on getting best accuracy, recall with minimal compute and latency.</li>
+
+              </ul>  
+              <i>Explored : CPU Optimisations, Accuracy/Recall Tradeoffs with compute limitations</i>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top">
+              <!-- <img id="work_img" src='images/temp.jpg'> -->
+            </td>
+            <td width="75%" valign="center" >
+              <papertitle>Automated Tagging of Commercials, Promos played on TV</papertitle>
+              <br>
+              <ul>
+                <li>Working on automatic matching of Commercials for Products and Programs(House Promos) using unsupervised approaches which includes clustering, distance based matching. </li>
+                <li>Working on Scalable Brand/Product logo recognitions using clustering and deep metric learning.</li>
+              </ul>  
+              <i>Explored : Clustering, Deep Metric Learning, Unsupervised Learning</i>
+            </td>
+          </tr>
         </table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
